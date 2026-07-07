@@ -1,0 +1,514 @@
+-<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>विघ्नहर्ता मित्र मंडळ | Vighnaharta Mitra Mandal — 28 Years of Devotion</title>
+<meta name="description" content="Official website of Vighnaharta Mitra Mandal — celebrating 28 years of Ganesh Utsav, community seva, and festival heritage.">
+<meta name="theme-color" content="#070314">
+
+<!-- Favicon -->
+<link rel="icon" href="images/logo/Logo.png" type="image/svg+xml">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Tiro+Devanagari+Hindi:ital@0;1&family=Cormorant+SC:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.0/swiper-bundle.min.css">
+
+<!-- LightGallery -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-zoom.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-thumbnail.min.css">
+
+<!-- Site CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div class="loader" id="loader">
+  <div class="loader-mandala">
+    <svg viewBox="0 0 200 200" class="loader-svg">
+      <circle cx="100" cy="100" r="90" class="loader-ring ring-1"/>
+      <circle cx="100" cy="100" r="70" class="loader-ring ring-2"/>
+      <circle cx="100" cy="100" r="50" class="loader-ring ring-3"/>
+    </svg>
+<img src="images/logo/logo.png" alt="Vighnaharta Mitra Mandal Logo" class="loader-logo">  </div>
+  <p class="loader-text">श्री गणेशाय नमः</p>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ============ BACKGROUND LAYERS (global) ============ -->
+<canvas id="starsCanvas" class="bg-canvas"></canvas>
+<div class="fog-layer fog-1"></div>
+<div class="fog-layer fog-2"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-om">ॐ</span>
+      <span class="logo-img">
+        <strong>विघ्नहर्ता</strong>
+        <small>मित्र मंडळ</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-link>Home</a>
+      <a href="#about" class="nav-link" data-link>About</a>
+      <a href="#gallery" class="nav-link" data-link>Gallery</a>
+      <a href="#events" class="nav-link" data-link>Events</a>
+      <a href="#sponsors" class="nav-link" data-link>Sponsors</a>
+      <a href="#donation" class="nav-link" data-link>Donation</a>
+      <a href="#contact" class="nav-link" data-link>Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-rays"></div>
+  <div class="hero-container">
+
+    <div class="hero-left" data-aos="fade-right" data-aos-duration="1200">
+      <p class="hero-eyebrow"><i class="fa-solid fa-om"></i> श्री गणेशाय नमः</p>
+      <h1 class="hero-title">
+        <span class="line line-1">विघ्नहर्ता</span>
+        <span class="line line-2 gold-gradient">मित्र मंडळ</span>
+      </h1>
+      <p class="hero-years"><span class="num-counter" data-count="28">0</span> Years of Faith &amp; Festivity</p>
+      <p class="hero-tagline">जिथे श्रद्धा उत्सव बनते — where devotion becomes celebration. Join our family as we celebrate Bappa's homecoming with grandeur, unity and seva.</p>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-gold ripple"><span>Explore Journey</span> <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#gallery" class="btn btn-ghost ripple"><span>View Gallery</span></a>
+      </div>
+    </div>
+
+    <div class="hero-right" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+      <div class="mandala-wrap">
+        <svg class="mandala mandala-outer" viewBox="0 0 500 500"><use href="#mandalaRing"/></svg>
+        <svg class="mandala mandala-inner" viewBox="0 0 500 500"><use href="#mandalaRing2"/></svg>
+        <div class="ganpati-glow"></div>
+        <div class="jersey-showcase-frame">
+          <img src="images/jersey/Bappa.png" alt="श्री गणेशाय नमः" class="jersey-showcase-img">
+          <span class="jersey-showcase-badge">Ganpati Bappa Morya </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <a href="#about" class="scroll-cue"><span></span> Scroll</a>
+</section>
+
+<!-- Shared SVG defs for mandala rings -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <g id="mandalaRing">
+      <circle cx="250" cy="250" r="240" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4 10"/>
+      <circle cx="250" cy="250" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="1"/>
+      <g id="petalsOuter"></g>
+    </g>
+    <g id="mandalaRing2">
+      <circle cx="250" cy="250" r="170" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="2 6"/>
+      <circle cx="250" cy="250" r="140" fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+    </g>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-head" data-aos="fade-up">
+    <span class="eyebrow">परिचय</span>
+    <h2>Our <span class="gold-gradient">Story</span> of 28 Years</h2>
+    <p class="section-sub">From a handful of devoted friends to a mandal that unites an entire community — this is our journey of faith, service and celebration.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card" data-aos="fade-up" data-aos-delay="0">
+      <i class="fa-solid fa-scroll"></i>
+      <h3>History</h3>
+      <p>Founded in 1998 by a small group of neighbourhood friends, Vighnaharta Mitra Mandal began as a modest Ganesh Utsav celebration. Over 28 years it has grown into one of the most awaited festivals in the area, blending tradition with grand artistry.</p>
+    </div>
+    <div class="about-card" data-aos="fade-up" data-aos-delay="120">
+      <i class="fa-solid fa-bullseye"></i>
+      <h3>Mission</h3>
+      <p>To celebrate Ganeshotsav with devotion and discipline, while using the festival spirit to serve society through health camps, tree plantation drives and community welfare initiatives.</p>
+    </div>
+    <div class="about-card" data-aos="fade-up" data-aos-delay="240">
+      <i class="fa-solid fa-eye"></i>
+      <h3>Vision</h3>
+      <p>To be a mandal that the next generation is proud to inherit — rooted in culture, open to innovation, and always in service of the community that sustains it.</p>
+    </div>
+    <div class="about-card" data-aos="fade-up" data-aos-delay="360">
+      <i class="fa-solid fa-award"></i>
+      <h3>Achievements</h3>
+      <p>Recognised for eco-friendly Ganesh idols, bUityfull decoration themes, and consistent civic contributions including health camps and neighbourhood welfare drives.</p>
+    </div>
+  </div>
+
+  <!-- Stats / Counters -->
+  <div class="stats-row" data-aos="fade-up">
+    <div class="stat">
+      <span class="num-counter" data-count="28">0</span><span class="stat-suffix">+</span>
+      <p>Years of Celebration</p>
+    </div>
+    <div class="stat">
+      <span class="num-counter" data-count="350+">0</span><span class="stat-suffix">+</span>
+      <p>Active Volunteers</p>
+    </div>
+    <div class="stat">
+      <span class="num-counter" data-count="2000">0</span><span class="stat-suffix">+</span>
+      <p>Devotees Every Year</p>
+    </div>
+    <div class="stat">
+      <span class="num-counter" data-count="150">0</span><span class="stat-suffix">+</span>
+      <p>Free Health Checkups</p>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+  <div class="timeline" data-aos="fade-up">
+    <h3 class="timeline-title">Our <span class="gold-gradient">Journey</span></h3>
+    <div class="timeline-track">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+        <span class="tl-year">1998</span>
+        <div class="tl-content"><h4>The Beginning</h4><p>A group of 12 friends installed the first small Ganesh idol in the lane.</p></div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="tl-year">2005</span>
+        <div class="tl-content"><h4>Community Grows</h4><p>The mandal registered officially and began organising cultural competitions for children.</p></div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="tl-year">2012</span>
+        <div class="tl-content"><h4>Seva Begins</h4><p>First free health check-up camp organised alongside the festival, now an annual tradition.</p></div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <span class="tl-year">2018</span>
+        <div class="tl-content"><h4>Eco-Friendly Pledge</h4><p>Mandal transitioned fully to eco-friendly, Shadu-clay idols and immersion practices.</p></div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+        <span class="tl-year">2026</span>
+        <div class="tl-content"><h4>28th Year</h4><p>Celebrating our largest Utsav yet, with this website marking a new digital chapter.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery" id="gallery">
+  <div class="section-head" data-aos="fade-up">
+    <span class="eyebrow">छायाचित्र दालन</span>
+    <h2>Moments of <span class="gold-gradient">Devotion</span></h2>
+    <p class="section-sub">A glimpse into 28 years of celebration, seva and togetherness.</p>
+  </div>
+
+  <div class="gallery-filters" data-aos="fade-up">
+    <button class="filter-btn active" data-filter="all">All</button>
+     <button class="filter-btn active" data-filter="all">Ganesh Festival</button>
+  </div>
+
+  <div class="masonry-grid" id="masonryGrid">
+    <!-- Populated by app.js from galleryData; images are placeholders until user uploads real photos -->
+  </div>
+</section>
+
+<!-- ============ EVENTS ============ -->
+<section class="events" id="events">
+  <div class="section-head" data-aos="fade-up">
+    <span class="eyebrow">कार्यक्रम</span>
+    <h2>Upcoming <span class="gold-gradient">Events</span></h2>
+    <p class="section-sub">7 divas of devotion — mark your calendars and celebrate every ritual with us this Utsav.</p>
+  </div>
+
+  <div class="events-grid">
+    <div class="event-card" data-aos="fade-up" data-aos-delay="0">
+      <span class="event-badge" data-countdown="2026-09-14T15:00:00">Day 1</span>
+      <h3>Shri Ganpati Aagman</h3>
+      <ul class="event-meta">
+        <li><i class="fa-regular fa-calendar"></i> 14 September 2026</li>
+        <li><i class="fa-regular fa-clock"></i> 1:00 PM</li>
+        <li><i class="fa-solid fa-location-dot"></i> Nazz Hotel ,Opp phonix mall, Kurla</li>
+      </ul>
+      <p>The joyous arrival and installation of Shri Ganesha, marking the beginning of our 7-day Utsav.</p>
+    </div>
+    <div class="event-card" data-aos="fade-up" data-aos-delay="120">
+      <span class="event-badge" data-countdown="2026-09-15T12:00:00">Day 2-5</span>
+      <h3>Mahaprasad</h3>
+      <ul class="event-meta">
+        <li><i class="fa-regular fa-calendar"></i> 18 September 2026</li>
+        <li><i class="fa-regular fa-clock"></i> 6:00 PM onwards, daily</li>
+        <li><i class="fa-solid fa-location-dot"></i> Mandal Mandap</li>
+      </ul>
+      <p>one days of community Mahaprasad, open to all devotees, bhakts and visitors of the Mandal.</p>
+    </div>
+    <div class="event-card" data-aos="fade-up" data-aos-delay="240">
+      <span class="event-badge" data-countdown="2026-09-19T18:00:00">Day 6</span>
+      <h3>Shri Satyanarayan Pooja</h3>
+      <ul class="event-meta">
+        <li><i class="fa-regular fa-calendar"></i> 19 September 2026</li>
+        <li><i class="fa-regular fa-clock"></i> 6:00 PM</li>
+        <li><i class="fa-solid fa-location-dot"></i> Mandal Mandap</li>
+      </ul>
+      <p>A sacred Satyanarayan Pooja on the sixth day, followed by aarti and prasad for the whole community.</p>
+    </div>
+    <div class="event-card" data-aos="fade-up" data-aos-delay="360">
+      <span class="event-badge" data-countdown="2026-09-20T16:00:00">Day 7</span>
+      <h3>Shri Ganesh Visarjan</h3>
+      <ul class="event-meta">
+        <li><i class="fa-regular fa-calendar"></i> 20 September 2026</li>
+        <li><i class="fa-regular fa-clock"></i> 4:00 PM</li>
+        <li><i class="fa-solid fa-location-dot"></i> LBS Marg Route</li>
+      </ul>
+      <p>The final day — a grand farewell procession as we bid Bappa goodbye until next year, Ganpati Bappa Morya!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPONSORS ============ -->
+<section class="sponsors" id="sponsors">
+  <div class="section-head" data-aos="fade-up">
+    <span class="eyebrow">प्रायोजक</span>
+    <h2>Our <span class="gold-gradient">Sponsors</span></h2>
+    <p class="section-sub">This Utsav is made possible by the generosity of our community partners.</p>
+  </div>
+
+  <div class="sponsor-tier" data-aos="fade-up">
+    <h3 class="tier-label tier-title">Title Sponsor</h3>
+    <div class="sponsor-row">
+      <div class="sponsor-card tier-title-card">
+        <div class="sponsor-logo"><i class="fa-solid fa-crown"></i></div>
+        <h4>Your Brand Here</h4>
+        <p>Title sponsorship placeholder — contact the committee to reserve this spot.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sponsor-tier" data-aos="fade-up">
+    <h3 class="tier-label tier-gold">Gold Sponsors</h3>
+    <div class="sponsor-row">
+      <div class="sponsor-card">
+        <div class="sponsor-logo"><i class="fa-solid fa-shop"></i></div>
+        <h4>Gold Sponsor 1</h4>
+        <p>Local business partner supporting our decoration budget.</p>
+      </div>
+      <div class="sponsor-card">
+        <div class="sponsor-logo"><i class="fa-solid fa-store"></i></div>
+        <h4>Gold Sponsor 2</h4>
+        <p>Supporting our cultural programme lineup this year.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sponsor-tier" data-aos="fade-up">
+    <h3 class="tier-label tier-silver">Silver Sponsors</h3>
+    <div class="sponsor-row">
+      <div class="sponsor-card"><div class="sponsor-logo"><i class="fa-solid fa-utensils"></i></div><h4>Silver Sponsor 1</h4><p>Prasad &amp; refreshment partner.</p></div>
+      <div class="sponsor-card"><div class="sponsor-logo"><i class="fa-solid fa-lightbulb"></i></div><h4>Silver Sponsor 2</h4><p>Lighting &amp; sound partner.</p></div>
+      <div class="sponsor-card"><div class="sponsor-logo"><i class="fa-solid fa-camera"></i></div><h4>Silver Sponsor 3</h4><p>Photography &amp; media partner.</p></div>
+    </div>
+  </div>
+
+  <div class="sponsor-tier" data-aos="fade-up">
+    <h3 class="tier-label tier-special">Special Sponsors</h3>
+    <div class="sponsor-row">
+      <div class="sponsor-card"><div class="sponsor-logo"><i class="fa-solid fa-heart"></i></div><h4>Community Well-wisher</h4><p>Anonymous contribution towards seva activities.</p></div>
+      <div class="sponsor-card"><div class="sponsor-logo"><i class="fa-solid fa-handshake"></i></div><h4>Special Contributor</h4><p>In-kind support for the Utsav mandap.</p></div>
+    </div>
+  </div>
+
+  <div class="sponsor-cta" data-aos="fade-up">
+    <i class="fa-solid fa-phone"></i>
+    <p>Interested in sponsoring this year's Utsav? Contact <strong>Abhishek Yadav — +91 87796 07519</strong></p>
+  </div>
+</section>
+
+<!-- ============ DONATION ============ -->
+<section class="donation" id="donation">
+  <div class="section-head" data-aos="fade-up">
+    <span class="eyebrow">देणगी</span>
+    <h2>Support Our <span class="gold-gradient">Utsav</span></h2>
+    <p class="section-sub">Your contribution helps us celebrate Ganeshotsav with grandeur while continuing our community seva work.</p>
+  </div>
+
+  <div class="donation-wrap" data-aos="fade-up">
+    <div class="donation-notice">
+      <i class="fa-solid fa-circle-info"></i>
+      <p><strong>Please note:</strong> This website does not process any online payments. All donations are accepted directly by the committee through bank transfer, UPI, or in person. Please verify details with a committee member before contributing.</p>
+    </div>
+
+    <div class="donation-grid">
+      <div class="donation-card">
+        <h3><i class="fa-solid fa-building-columns"></i> Bank Details</h3>
+        <ul class="donation-list">
+          <li><span>Bank Name</span><strong>State Bank of India</strong></li>
+          <li><span>Account Name</span><strong>Vighnaharta Mitra Mandal</strong></li>
+          <li><span>Account Number</span><strong>XXXXXXXXXX7538</strong></li>
+          <li><span>IFSC Code</span><strong>SBIN0001</strong></li>
+          <li><span>Branch</span><strong>Vidyavihar</strong></li>
+        </ul>
+      </div>
+
+      <div class="donation-card donation-qr">
+        <h3><i class="fa-solid fa-qrcode"></i> UPI / QR</h3>
+        <div class="qr-placeholder">
+          <i class="fa-solid fa-qrcode"></i>
+          <p>QR Code Image<br>(To be added by committee)</p>
+        </div>
+        <p class="upi-id">UPI ID: <strong>vighnahartamandal@upi</strong></p>
+      </div>
+
+      <div class="donation-card">
+        <h3><i class="fa-solid fa-users"></i> Committee Contact</h3>
+        <ul class="donation-list contact-list">
+          <li><span>President</span><strong>Shri Sandeep Yadav</strong></li>
+          <li><span>Treasurer</span><strong>Shri Vivek Yadav- +91 91679 61052</strong></li>
+          <li><span>Vīce-secretary</span><strong>Shri Purnachandra Manda- +91 81080 89347</strong></li>
+          <li><span>Sponsorship Enquiries</span><strong>Abhishek Yadav — +91 87796 07519</strong></li>
+        </ul>
+        <p class="donation-appeal">Every rupee contributed goes directly towards the mandap, decoration, prasad and our annual seva initiatives. Ganpati Bappa Morya!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-head" data-aos="fade-up">
+    <span class="eyebrow">संपर्क</span>
+    <h2>Get in <span class="gold-gradient">Touch</span></h2>
+    <p class="section-sub">Have a question, want to volunteer, or wish to sponsor? We'd love to hear from you.</p>
+  </div>
+
+  <div class="contact-wrap">
+    <div class="contact-cards" data-aos="fade-right">
+      <div class="contact-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <div><h4>Address</h4><p>Shree Ram Janaki Mandir (VHP), Dr Raju Bedekar Marg, Ambedkar Nagar, Vidyavihar West, Vidyavihar, Mumbai, Maharashtra 400086</p></div>
+      </div>
+      <div class="contact-card">
+        <i class="fa-solid fa-phone"></i>
+        <div><h4>Phone</h4><p>Abhishek Yadav — +91 87796 07519</p></div>
+      </div>
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope"></i>
+        <div><h4>Email</h4><p>info@vighnahartamandalgmail.com</p></div>
+      </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-whatsapp"></i>
+        <div><h4>WhatsApp</h4><p>+91 87796 07519</p>
+        <br><h4>Aarti Time</h4><p>Morning 9.00 am  evening 8.00 pm</p></div>
+      </div>
+      <div class="contact-card">
+        <i class="fa-solid fa-clock"></i>
+        <div><h4>Working Hours</h4><p>Utsav Week: 7 AM – 11 PM<br>Off-season: By appointment</p></div>
+      </div>
+      
+      <div class="contact-qr">
+        <img src="images/icons/instagram-qr.png" alt="Scan to follow @navpada_cha_ganraj on Instagram">
+        <p>Scan to follow us <strong>@navpada_cha_ganraj</strong></p>
+      </div>
+    </div>
+
+    <div class="contact-map" data-aos="fade-left">
+      <iframe
+        src="https://www.google.com/maps?q=Shree+Ram+Janaki+Mandir+(VHP),+Dr+Raju+Bedekar+Marg,+Ambedkar+Nagar,+Vidyavihar+West,+Vidyavihar,+Mumbai,+Maharashtra+400086&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Mandal Location Map"></iframe>
+      <a class="map-pin-badge"
+         href="https://www.google.com/maps/search/?api=1&query=Shree+Ram+Janaki+Mandir+(VHP)+Dr+Raju+Bedekar+Marg+Ambedkar+Nagar+Vidyavihar+West+Mumbai+Maharashtra+400086"
+         target="_blank" rel="noopener" aria-label="Open Shree Ram Janaki Mandir location in Google Maps">
+        <i class="fa-solid fa-location-dot"></i> <span>Open in Google Maps</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-om">ॐ</span>
+      <h3>विघ्नहर्ता मित्र मंडळ</h3>
+      <p>28 years of devotion, unity and celebration. Ganpati Bappa Morya!</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#jersey">Jersey</a>
+      <a href="#events">Events</a>
+      <a href="#sponsors">Sponsors</a>
+      <a href="#donation">Donation</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h4>Connect With Us</h4>
+      <div class="footer-social-icons">
+        <a href="https://instagram.com/navpada_cha_ganraj" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Vighnaharta Mitra Mandal. All rights reserved.</p>
+    <p class="footer-credit">Designed & Manager By<strong>Vighnaharta Mitra Mandal</strong></p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ============ LIGHTBOX MODAL (custom, for masonry gallery) ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+  <img src="" alt="" class="lightbox-img" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.0/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+
+<script src="js/particles.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/jersey.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

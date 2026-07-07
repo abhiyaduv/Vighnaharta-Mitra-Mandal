@@ -1,0 +1,67 @@
+/* ==========================================================================
+   ANIMATION LAYER — supplemental keyframes & motion utility classes
+   ========================================================================== */
+
+/* Hero title letter/line entrance (driven by GSAP but base state set here) */
+.hero-title .line{
+  opacity:0;
+  transform: translateY(40px);
+}
+.js-ready .hero-title .line-1{ animation: lineIn .9s var(--ease) .3s forwards; }
+.js-ready .hero-title .line-2{ animation: lineIn .9s var(--ease) .55s forwards; }
+.js-ready .hero-eyebrow{ animation: fadeIn .8s var(--ease) .1s forwards; opacity:0; }
+.js-ready .hero-years{ animation: fadeIn .8s var(--ease) .8s forwards; opacity:0; }
+.js-ready .hero-tagline{ animation: fadeIn .8s var(--ease) 1s forwards; opacity:0; }
+.js-ready .hero-cta{ animation: fadeIn .8s var(--ease) 1.2s forwards; opacity:0; }
+
+@keyframes lineIn{ to{ opacity:1; transform:none; } }
+@keyframes fadeIn{ to{ opacity:1; transform:none; } }
+
+/* Floating particles (canvas-independent decorative sparkles) */
+.spark{
+  position:absolute; width:3px; height:3px; border-radius:50%;
+  background: var(--accent); box-shadow: 0 0 8px 2px rgba(255,215,0,0.6);
+  animation: sparkFloat linear infinite;
+  pointer-events:none;
+}
+@keyframes sparkFloat{
+  0%{ transform: translateY(0) translateX(0); opacity:0; }
+  10%{ opacity:1; }
+  90%{ opacity:1; }
+  100%{ transform: translateY(-120vh) translateX(20px); opacity:0; }
+}
+
+/* Image reveal wipe (used via .reveal-wipe wrapper if desired) */
+.reveal-wipe{ position:relative; overflow:hidden; }
+.reveal-wipe::after{
+  content:""; position:absolute; inset:0; background: var(--gold);
+  transform-origin:left; animation: wipeOut 1s var(--ease) forwards;
+}
+@keyframes wipeOut{ to{ transform: scaleX(0); } }
+
+/* Card hover glow sweep */
+.about-card, .event-card, .sponsor-card, .donation-card{ position:relative; }
+.about-card::after, .event-card::after{
+  content:""; position:absolute; inset:0; border-radius:inherit; opacity:0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,215,0,0.08), transparent 70%);
+  transition: opacity .4s;
+  pointer-events:none;
+}
+.about-card:hover::after, .event-card:hover::after{ opacity:1; }
+
+/* Countdown badge pulse */
+.event-badge{ position:relative; }
+.event-badge::before{
+  content:""; position:absolute; left:8px; top:50%; width:6px; height:6px; border-radius:50%;
+  background: var(--accent); transform:translateY(-50%);
+  animation: pulseDot 1.6s ease-in-out infinite;
+}
+.event-badge{ padding-left:26px; }
+@keyframes pulseDot{ 0%,100%{ box-shadow:0 0 0 0 rgba(255,215,0,0.6);} 50%{ box-shadow:0 0 0 5px rgba(255,215,0,0);} }
+
+/* Page fade-in on load */
+body{ animation: pageFade .6s ease; }
+@keyframes pageFade{ from{ opacity:0; } to{ opacity:1; } }
+
+/* AOS speed tuning (overrides default timing feel) */
+[data-aos]{ transition-duration: 900ms !important; }

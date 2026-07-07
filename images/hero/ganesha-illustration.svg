@@ -1,0 +1,78 @@
+<svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg" aria-label="Stylised illustration of Lord Ganesha">
+  <defs>
+    <linearGradient id="gg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8a6a1f"/>
+    </linearGradient>
+    <linearGradient id="gg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="ggGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFD700" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ambient glow -->
+  <ellipse cx="200" cy="180" rx="180" ry="180" fill="url(#ggGlow)"/>
+
+  <!-- crown -->
+  <path d="M140 60 L160 20 L180 55 L200 10 L220 55 L240 20 L260 60 Z"
+        fill="none" stroke="url(#gg1)" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="200" cy="15" r="6" fill="url(#gg1)"/>
+
+  <!-- ears -->
+  <path d="M120 140 C60 120 55 220 110 250 C130 260 140 230 130 200 C160 170 150 140 120 140 Z"
+        fill="none" stroke="url(#gg1)" stroke-width="3"/>
+  <path d="M280 140 C340 120 345 220 290 250 C270 260 260 230 270 200 C240 170 250 140 280 140 Z"
+        fill="none" stroke="url(#gg1)" stroke-width="3"/>
+
+  <!-- head -->
+  <path d="M200 70
+           C140 70 115 120 120 175
+           C123 210 140 235 150 255
+           C130 270 120 295 130 320
+           C145 345 175 350 200 350
+           C225 350 255 345 270 320
+           C280 295 270 270 250 255
+           C260 235 277 210 280 175
+           C285 120 260 70 200 70 Z"
+        fill="none" stroke="url(#gg1)" stroke-width="3.2"/>
+
+  <!-- forehead tilak -->
+  <path d="M185 110 C195 100 205 100 215 110 C210 122 190 122 185 110 Z" fill="url(#gg1)" opacity="0.85"/>
+  <circle cx="200" cy="132" r="4" fill="url(#gg1)"/>
+
+  <!-- eyes -->
+  <path d="M165 165 Q178 155 192 165" fill="none" stroke="url(#gg1)" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M208 165 Q222 155 235 165" fill="none" stroke="url(#gg1)" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- tusk -->
+  <path d="M225 245 L245 262 L232 268 Z" fill="none" stroke="url(#gg1)" stroke-width="2.4" stroke-linejoin="round"/>
+
+  <!-- trunk -->
+  <path d="M200 210
+           C195 240 175 250 178 275
+           C180 295 200 300 215 290
+           C228 282 225 265 210 262"
+        fill="none" stroke="url(#gg1)" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- shoulders / body -->
+  <path d="M120 350 C110 400 130 440 200 445 C270 440 290 400 280 350
+           C260 375 240 385 200 385 C160 385 140 375 120 350 Z"
+        fill="none" stroke="url(#gg2)" stroke-width="3"/>
+
+  <!-- shawl drape accent -->
+  <path d="M140 355 C160 400 240 400 260 355" fill="none" stroke="url(#gg1)" stroke-width="1.4" opacity="0.6" stroke-dasharray="2 6"/>
+
+  <!-- decorative dot pattern along crown base -->
+  <g fill="url(#gg1)" opacity="0.8">
+    <circle cx="150" cy="82" r="2.2"/>
+    <circle cx="170" cy="72" r="2.2"/>
+    <circle cx="200" cy="66" r="2.2"/>
+    <circle cx="230" cy="72" r="2.2"/>
+    <circle cx="250" cy="82" r="2.2"/>
+  </g>
+</svg>
